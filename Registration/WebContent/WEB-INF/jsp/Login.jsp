@@ -1,0 +1,29 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<h1> Please Login... </h1>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Registration Form</title>
+</head>
+<body bgcolor="green">
+
+<div align="center">
+
+<form action="<%= request.getContextPath()%>/login" method="post">
+		<table>				 
+			  <tr>
+			 	<td>User Name:</td>
+				<td><input type="text" name="username"></td>
+			 </tr>
+			  <tr>
+			 	<td>Password:</td>
+				<td><input type="password" name="password"></td>
+			 </tr>
+		</table>
+		<input type="submit" value="Submit">
+	</form>
+</div>
+</body>
+</html>
