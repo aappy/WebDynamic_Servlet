@@ -21,7 +21,7 @@
 						if (request.getParameter("bankName") != "") {
 						%>
 						<option value="<%=request.getParameter("bankName")%>">
-						<%=request.getParameter("bankName") != null ? request.getParameter("bankName") : ""%>">
+							<%=request.getParameter("bankName") != null ? request.getParameter("bankName") : ""%>">
 						</option>
 						<%
 							} else {
@@ -39,12 +39,12 @@
 			<tr>
 				<td><label for="accountNumber">Account</label></td>
 				<td><input type="text" name="accountNumber" id="accountNumber"
-					value="<%=request.getParameter("accountNumber")!= null ? request.getParameter("accountNumber") : ""%>"></td>
+					value="<%=request.getParameter("accountNumber") != null ? request.getParameter("accountNumber") : ""%>"></td>
 			</tr>
 			<tr>
 				<td><label for="ssn">SSN</label></td>
 				<td><input type="text" name="ssn" id="ssn"
-					value="<%=request.getParameter("ssn")!= null ? request.getParameter("ssn") : ""%>"></td>
+					value="<%=request.getParameter("ssn") != null ? request.getParameter("ssn") : ""%>"></td>
 			</tr>
 		</table>
 		<br> <br> <input type=submit name="submit" value="submit" />
